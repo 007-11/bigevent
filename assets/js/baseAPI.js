@@ -14,8 +14,9 @@ $.ajaxPrefilter(function (options) {
     // 无论是获取用户失败还是成功都执行这个函数,如果没有登录就输入index页面，那么会立马跳转到login页面
     options.complete = function (e) {
         if (e.responseJSON.status === 1 && e.responseJSON.message === "身份认证失败！") {
-            location.href = '../login.html'
             localStorage.removeItem('token')
+            location.href = '../login.html'
+
         }
     }
 })

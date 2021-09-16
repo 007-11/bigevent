@@ -47,7 +47,7 @@
                 <div class='userinfo'>
                     <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"
                         class="layui-nav-img">
-                    <span class="userhead">A</span>
+                    <span class="userhead" id='w'>A</span>
                     <span class="welcome">欢迎xxx</span>
                 </div>
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
@@ -73,11 +73,11 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;" class='color1'><span class="iconfont icon-gerenzhongxin"></span>个人中心</a>
                         <dl class="layui-nav-child color2">
-                            <dd><a href="javascript:;"><span class="iconfont icon-jibenziliao"
+                            <dd><a href="user/user_info.html" target='fm'><span class="iconfont icon-jibenziliao"
                                         style="margin-left:20px"></span>基本资料</a></dd>
-                            <dd><a href="javascript:;"><span class="iconfont icon-genghuan"
+                            <dd><a href="javascript:;" target='fm'><span class="iconfont icon-genghuan"
                                         style="margin-left:20px"></span>更换头像</a></dd>
-                            <dd><a href="javascript:;"><span class="iconfont icon-zhongzhimima"
+                            <dd><a href="user/user_reset.html" target='fm'><span class="iconfont icon-zhongzhimima"
                                         style="margin-left:20px"></span>重置密码</a></dd>
                         </dl>
                     </li>
@@ -128,6 +128,7 @@
     <script src="./assets/lib/jquery.js"></script>
     <script src="./assets/js/baseAPI.js"></script>
     <script src="./assets/js/index.js"></script>
+
 </body>
 
 </html>
